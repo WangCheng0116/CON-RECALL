@@ -39,17 +39,17 @@ Replace `[arguments]` with the desired parameter settings. Here are some example
 
 2. Run with a deletion attack:
    ```
-   python run.py --target_model EleutherAI/pythia-6.9b --ref_model EleutherAI/pythia-70m --dataset your_dataset_name --attack_type del --attack_strength 0.15
+   python run.py --target_model EleutherAI/pythia-6.9b --ref_model EleutherAI/pythia-70m --dataset wikimia --sub_dataset 32 --attack_type del --attack_strength 0.15
    ```
 
 3. Run with a synonym substitution attack:
    ```
-   python run.py --target_model huggyllama/llama-30b --ref_model huggyllama/llama-7b --dataset your_dataset_name --attack_type sub --attack_strength 0.20
+   python run.py --target_model huggyllama/llama-30b --ref_model huggyllama/llama-7b --dataset wikimia --sub_dataset 64 --attack_type sub --attack_strength 0.20
    ```
 
 4. Run with a paraphrase attack:
    ```
-   python run.py --target_model EleutherAI/pythia-6.9b --ref_model EleutherAI/pythia-70m --dataset your_dataset_name --attack_type para
+   python run.py --target_model EleutherAI/pythia-6.9b --ref_model EleutherAI/pythia-70m --dataset wikimia --sub_dataset 128 --attack_type para
    ```
 
 Note that for deletion and synonym substitution attacks, you can specify the portion of words to be modified using the `--attack_strength` parameter. This parameter is not applicable for paraphrase attacks.

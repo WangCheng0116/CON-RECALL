@@ -1,3 +1,6 @@
+# 🚀 News
+🎉 Nov, 2024: **Con-ReCall gets accepted to [COLING 2025](https://coling2025.org/)!**
+
 # Running the Experiment
 
 This section describes the parameters available for the experiment and provides instructions on how to run it.
